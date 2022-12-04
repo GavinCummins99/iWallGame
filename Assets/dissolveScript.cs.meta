@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f57c30d7801b4fc44889a4b841dee4af
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - lightMat: {fileID: 2100000, guid: 38ee2c1bddd7611469bac56f5f12986a, type: 2}
+  - audioManager: {instanceID: 0}
+  - ScoreUI: {instanceID: 0}
+  - GameManager: {instanceID: 0}
+  - PlayerAudioSource: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
