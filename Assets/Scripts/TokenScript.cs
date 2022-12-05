@@ -1,6 +1,7 @@
 using Mono.Cecil;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 //This Script goes on the spawn points of the tokens
@@ -19,13 +20,12 @@ public class TokenScript : MonoBehaviour
     // Start is called before the first frame update
     public void SpawnToken()
     {
-       
+            
             rand = Random.Range(0, Tokens.Length);
             Token = Tokens[rand];
-        
-            SpawnPosition = this.gameObject.transform;
-            //Token.GetComponent<dissolveScript>().UIText.GetComponent<Text>().text = SpawnPosition.GetComponent<Text>().text;
-            Instantiate(Token, SpawnPosition);
+            
+        //Token.GetComponent<dissolveScript>().UIText.GetComponent<Text>().text = SpawnPosition.GetComponent<Text>().text;
+        Instantiate(Token, SpawnPosition);
             
             GetComponentInChildren<TokenController>().Leen();
        
@@ -41,7 +41,7 @@ public class TokenScript : MonoBehaviour
 
     private void Update()
     {
-        if(transform.childCount > 0)
+        if(transform.childCount > 1)
         {
             ready = false;
         }

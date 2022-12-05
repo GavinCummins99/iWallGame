@@ -17,6 +17,15 @@ public class GameManager : MonoBehaviour
         
 
     }
+
+    void update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }     
+        
+    }
    
 
     // Update is called once per frame

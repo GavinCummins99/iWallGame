@@ -29,8 +29,10 @@ public class dissolveScript : MonoBehaviour
         GameManager = GameObject.Find("GameManager");
         PlayerAudioSource = GameObject.Find("Camera").GetComponent<AudioSource>();
         emissionColour = lightMat.GetColor("_EmissionColor");
+        emissionColour = startColour;
         UIText = transform.GetChild(2).transform.GetComponentInChildren<Text>();
         UIText.text = transform.parent.GetComponent<Text>().text;
+        UIText.color = startColour;
 
     }
 
@@ -102,6 +104,14 @@ public class dissolveScript : MonoBehaviour
     {
         StartCoroutine("AudioPitchChange");
         Invoke("RevertColor", 2f);
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "plane")
+        {
+            UIText.color = selectedColour;
+        }
     }
 }
 

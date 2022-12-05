@@ -3,7 +3,10 @@ guid: 9dcbea6a8a6524447992e3a58fff2c78
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Token: {instanceID: 0}
+  - GameManager: {instanceID: 0}
+  - Portal: {fileID: 6180196833942767294, guid: 16893ae68807999458777c66bfff89ff, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -10,7 +10,7 @@ public class DeathPlaneScript : MonoBehaviour
         if (other.gameObject.tag == "Token")
         {
             other.gameObject.GetComponent<dissolveScript>().destroy();
-            Destroy(other.gameObject, 3f);
+            Destroy(other.gameObject, 2f);
         }
             
     }

@@ -18,7 +18,7 @@ public class TokenController : MonoBehaviour
     public void Leen()
     {
         //Destination = Target.transform;
-        LeanTween.moveLocalX(this.gameObject,50f, 10f);
+        LeanTween.moveLocalX(this.gameObject,40f, 10f);
     }
 
     

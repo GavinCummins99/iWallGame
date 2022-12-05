@@ -10,6 +10,7 @@ public class SpawnScript : MonoBehaviour
     public int rand;
     public int limit;
     public float delay;
+    
     public GameObject[] SpawnPoints;
     public GameObject spawnPoint;
     public GameObject AudioManager;
@@ -34,11 +35,13 @@ public class SpawnScript : MonoBehaviour
         while(limit > 0)
         {
             rand = UnityEngine.Random.Range(0, SpawnPoints.Length);
-            Debug.Log("SpawnTokens");
+            //Debug.Log("SpawnTokens");
 
             spawnPoint = SpawnPoints[rand];
+            //spawnPoint.transform.GetChild(0).GetComponent<portalScript>().Anim();
                     if(spawnPoint.GetComponent<TokenScript>().ready == true)
                     {
+                        spawnPoint.transform.GetComponentInChildren<portalScript>().Anim();
                         spawnPoint.GetComponent<TokenScript>().SpawnToken();
                      
                         limit--;

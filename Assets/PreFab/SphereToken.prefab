@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6309134090674777396}
-  m_RootOrder: -1
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7087838128588499412
 MeshFilter:
@@ -114,7 +114,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6309134090674777396}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3019998597948551743
 MeshFilter:
@@ -198,7 +198,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5765792222855993467}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -295,7 +295,7 @@ RectTransform:
   m_Children:
   - {fileID: 5765792222287302087}
   m_Father: {fileID: 6309134090674777396}
-  m_RootOrder: -1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -320,7 +320,6 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -532,8 +531,8 @@ MonoBehaviour:
   GameManager: {fileID: 0}
   PlayerAudioSource: {fileID: 0}
   UIText: {fileID: 0}
-  selectedColour: {r: 0, g: 1, b: 0.29803923, a: 1}
-  startColour: {r: 0.7688679, g: 0.7688679, b: 1, a: 1}
+  selectedColour: {r: 0.9647059, g: 0.43529412, b: 0, a: 1}
+  startColour: {r: 0.9647059, g: 0.43529412, b: 0, a: 1}
 --- !u!114 &5765792222430814536
 MonoBehaviour:
   m_ObjectHideFlags: 0
