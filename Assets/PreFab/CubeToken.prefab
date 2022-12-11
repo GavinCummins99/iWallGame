@@ -58,6 +58,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -365,6 +366,7 @@ MonoBehaviour:
   GameManager: {fileID: 0}
   PlayerAudioSource: {fileID: 0}
   UIText: {fileID: 0}
+  emissionColour: {r: 0.6839622, g: 0.72692883, b: 1, a: 0}
   selectedColour: {r: 0.9647059, g: 0.43529412, b: 0, a: 1}
   startColour: {r: 0.9647059, g: 0.43529412, b: 0, a: 1}
 --- !u!114 &3498862554365195587

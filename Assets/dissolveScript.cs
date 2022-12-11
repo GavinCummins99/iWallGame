@@ -16,7 +16,7 @@ public class dissolveScript : MonoBehaviour
     public GameObject GameManager;
     public AudioSource PlayerAudioSource;
     public Text UIText;
-    private Color emissionColour;
+    public Color emissionColour;
     public Color selectedColour;
     public Color startColour;
 
@@ -28,7 +28,8 @@ public class dissolveScript : MonoBehaviour
         myAudioSource = GetComponent<AudioSource>();
         GameManager = GameObject.Find("GameManager");
         PlayerAudioSource = GameObject.Find("Camera").GetComponent<AudioSource>();
-        emissionColour = lightMat.GetColor("_EmissionColor");
+        //emissionColour = lightMat.GetColor("_EmissionColor");
+        lightMat.SetColor("_EmissionColor", emissionColour);
         emissionColour = startColour;
         UIText = transform.GetChild(2).transform.GetComponentInChildren<Text>();
         UIText.text = transform.parent.GetComponent<Text>().text;

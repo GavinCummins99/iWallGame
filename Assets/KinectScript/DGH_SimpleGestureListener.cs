@@ -42,9 +42,9 @@ public class DGH_SimpleGestureListener : MonoBehaviour, KinectGestures.GestureLi
 		manager.DetectGesture(userId, KinectGestures.Gestures.Jump);
 		manager.DetectGesture(userId, KinectGestures.Gestures.Squat);
 
-		manager.DetectGesture(userId, KinectGestures.Gestures.LeanLeft);
-		manager.DetectGesture(userId, KinectGestures.Gestures.LeanRight);
-        manager.DetectGesture(userId, KinectGestures.Gestures.LeanForward);
+		//manager.DetectGesture(userId, KinectGestures.Gestures.LeanLeft);
+		//manager.DetectGesture(userId, KinectGestures.Gestures.LeanRight);
+        //manager.DetectGesture(userId, KinectGestures.Gestures.LeanForward);
         manager.DetectGesture(userId, KinectGestures.Gestures.LeanBack);
 		manager.DetectGesture(userId, KinectGestures.Gestures.KickLeft);
 		manager.DetectGesture(userId, KinectGestures.Gestures.KickRight);

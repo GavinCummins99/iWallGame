@@ -7,11 +7,13 @@ public class GameManager : MonoBehaviour
 {
     public Text scoreText;
     public int score = 0;
+    public int objectCount = 0;
     public List<GameObject> gridList = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
-       
+        score = 0;
+        objectCount = 0;
         int randomIndex = Random.Range(0, gridList.Count);
         scoreText.text = "Score : 0";
         
@@ -31,6 +33,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     public void Score()
     {
+        objectCount++;
         score = score + 10;
         scoreText.text = "Score: " + score.ToString();
         
